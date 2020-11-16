@@ -44,12 +44,12 @@
 // |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL  |
 // |      |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
 // |      |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
-//                    |     |     |     |   |     |     |     |
+//                    |     |     | DEL |   |     |     |     |
                         bindings = <
    &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp DELETE
    &trans   &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
    &trans   &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
-                                &trans    &trans    &trans      &trans    &trans   &trans
+                                &trans    &trans    &kp DELETE  &trans    &trans   &trans
                         >;
                 };
         };
