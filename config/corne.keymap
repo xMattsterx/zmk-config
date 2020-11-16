@@ -28,28 +28,28 @@
 				
 				lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL  |
+// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL  |
 // |      |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
 // |      |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
 //                    | GUI |     | DEL |   |     |     |     |
                         bindings = <
-   &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp DELETE
-   &trans   &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
-   &trans   &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
-                                &kp LGUI  &trans    &kp DELETE  &trans    &trans   &trans
+   &kp ESC  &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5   &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp DELETE
+   &trans   &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQL   &kp LBKT  &kp RBKT  &kp PIPE  &kp GRAV
+   &trans   &trans    &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &kp BSLH  &kp TILD
+                                &kp LGUI  &trans    &kp DELETE  &trans    &trans    &trans
                         >;
                 };
 				
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  `   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  | UP  |  9  |  0  | DEL  |
+// |  `   |     |     |     |     |     |   |     |     | UP  |     |     | DEL  |
 // |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |     | LFT | DWN | RGT |     |      |
 // |      |     |     |     |     |     |   |     |MUTE |VOLD |VOLU |     |      |
 //                    | CAPS|     |BTCLR|   |     |     |     |
                         bindings = <
-   &kp GRAV   &kp NUM_1    &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5         &kp NUM_6 &kp NUM_7    &kp UARW         &kp NUM_9          &kp NUM_0 &kp DELETE
-   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans    &kp LARW     &kp DARW         &kp RARW           &trans     &trans
-   &trans     &trans       &trans       &trans       &trans       &trans            &trans    &kp C_MUTE   &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans    &trans
+   &kp GRAV   &trans       &trans       &trans       &trans       &trans            &trans    &trans       &kp UARW         &trans             &trans   &kp DELETE
+   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans    &kp LARW     &kp DARW         &kp RARW           &trans   &trans
+   &trans     &trans       &trans       &trans       &trans       &trans            &trans    &kp C_MUTE   &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans   &trans
                                         &kp CLCK     &trans       &bt BT_CLR        &trans    &trans       &trans
                         >;
                 };
