@@ -25,6 +25,21 @@
                    &kp LGUI &mo 1 &kp SPC   &kp SPC &mo 2 &kp RALT
                         >;
                 };
+				
+				lower_layer {
+// -----------------------------------------------------------------------------------------
+// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL  |
+// |      |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
+// |      |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
+//                    |     |     | DEL |   |     |     |     |
+                        bindings = <
+   &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp DELETE
+   &trans   &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
+   &trans   &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
+                                &trans    &trans    &kp DELETE  &trans    &trans   &trans
+                        >;
+                };
+				
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  `   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL  |
@@ -36,20 +51,6 @@
    &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans    &kp LARW     &kp RARW         &kp DARW           &kp UARW  &trans
    &trans     &trans       &trans       &trans       &trans       &trans            &trans    &kp K_MUTE   &kp K_VOLUME_UP  &kp K_VOLUME_DOWN  &trans    &trans
                                         &kp CLCK     &trans       &bt BT_CLR        &trans    &trans       &trans
-                        >;
-                };
-
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL  |
-// |      |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
-// |      |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
-//                    |     |     | DEL |   |     |     |     |
-                        bindings = <
-   &kp  ESC &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN &kp DELETE
-   &trans   &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQL  &kp LBKT &kp RBKT &kp PIPE &kp GRAV
-   &trans   &trans    &trans    &trans    &trans    &trans      &trans    &trans   &trans   &trans   &kp BSLH &kp TILD
-                                &trans    &trans    &kp DELETE  &trans    &trans   &trans
                         >;
                 };
         };
