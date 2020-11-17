@@ -47,9 +47,9 @@
 // |      |     |     |     |     |     |   |     |MUTE |VOLD |VOLU |     |      |
 //                    | CAPS|     |BTCLR|   |     |     |     |
                         bindings = <
-   &kp GRAV   &trans       &trans       &trans       &trans       &trans            &trans    &trans       &kp UARW         &trans             &trans   &kp DELETE
-   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans    &kp LARW     &kp DARW         &kp RARW           &trans   &trans
-   &trans     &trans       &trans       &trans       &trans       &trans            &trans    &kp C_MUTE   &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans   &trans
+   &kp GRAV   &trans       &trans       &trans       &trans       &trans            &trans    &trans       &kp UARW           &trans             &trans   &kp DELETE
+   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &trans    &kp LARW     &kp DARW           &kp RARW           &trans   &trans
+   &trans     &trans       &trans       &trans       &trans       &trans            &trans    &kp C_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &trans   &trans
                                         &kp CLCK     &trans       &bt BT_CLR        &trans    &trans       &trans
                         >;
                 };
